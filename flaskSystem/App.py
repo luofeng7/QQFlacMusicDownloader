@@ -154,7 +154,7 @@ def Start(port):
                 c.set_folder(cfg['download_locate'])
             else:
                 print("路径不存在，使用默认下载目录:", c.get_folder())
-                save_config(c.get_folder(),c.getCurrentResize())
+                save_config(c.get_folder(),c.getCurrentResize(),False)
 
 
     app.run(
